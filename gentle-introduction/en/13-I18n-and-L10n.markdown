@@ -19,16 +19,17 @@ All in all, dealing with i18n and l10n means that the application can take care 
 
 This chapter covers the way symfony deals with those elements and how you can use it to develop internationalized and localized applications.
 
-User Culture
+Локаль Пользователя
 ------------
 
+Все встроенные функции i18n в symfony базируются на параметре пользовательской сессии, называемом локалью. Локаль — это комбинация страны и языка пользователя, и определяется как 
 All the built-in i18n features in symfony are based on a parameter of the user session called the culture. The culture is the combination of the country and the language of the user, and it determines how the text and culture-dependent information are displayed. Since it is serialized in the user session, the culture is persistent between pages.
 
-### Setting the Default Culture
+### Установка Локали по умолчанию
 
-By default, the culture of new users is the `default_culture`. You can change this setting in the `settings.yml` configuration file, as shown in Listing 13-1.
+По умолчанию, локаль нового пользователя это `default_culture`. Вы можете изменить эту настройку в конфигурационном файле `settings.yml`, как показано в Листинге 13-1.
 
-Listing 13-1 - Setting the Default Culture, in `frontend/config/settings.yml`
+Листинг 13-1 - Установка Локали по умолчанию, в `frontend/config/settings.yml`
 
     all:
       .settings:
@@ -39,11 +40,12 @@ Listing 13-1 - Setting the Default Culture, in `frontend/config/settings.yml`
 
 Keeping both the language and the country in the culture is necessary because you may have a different French translation for users from France, Belgium, or Canada, and a different Spanish content for users from Spain or Mexico. The language is coded in two lowercase characters, according to the ISO 639-1 standard (for instance, `en` for English). The country is coded in two uppercase characters, according to the ISO 3166-1 standard (for instance, `GB` for Great Britain).
 
-### Changing the Culture for a User
+### Изменение Локали Пользователя
 
-The user culture can be changed during the browsing session--for instance, when a user decides to switch from the English version to the French version of the application, or when a user logs in to the application and uses the language stored in his preferences. That's why the `sfUser` class offers getter and setter methods for the user culture. Listing 13-2 shows how to use these methods in an action.
+Локаль пользователя может быть изменена во время сеанса/жизни сессии — например, когда пользователь решил переключиться с английской на французскую версию приложения, или когда  
+The user culture can be changed during the browsing session--for instance, when a user decides to switch from the English version to the French version of the application, or when a user logs in to the application and uses the language stored in his preferences. That's why the `sfUser` class offers getter and setter methods for the user culture. Листинг 13-2 как использовать эти методы в действии.
 
-Listing 13-2 - Setting and Retrieving the Culture in an Action
+Листинг 13-2 - Установка и Setting and Retrieving the Culture in an Action
 
     [php]
     // Culture setter
