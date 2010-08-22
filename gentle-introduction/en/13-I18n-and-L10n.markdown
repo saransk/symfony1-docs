@@ -1,6 +1,7 @@
-Chapter 13 - I18n And L10n
+Глава 13 - I18n и L10n
 ==========================
 
+Если Вы когда-либо разрабатывали международные приложения, Вы знаете, что
 If you ever developed an international application, you know that dealing with every aspect of text translation, local standards, and localized content can be a nightmare. Fortunately, symfony natively automates all the aspects of internationalization.
 
 As it is a long word, developers often refer to internationalization as i18n (count the letters in the word to know why). Localization is referred to as l10n. They cover two different aspects of multilingual web applications.
