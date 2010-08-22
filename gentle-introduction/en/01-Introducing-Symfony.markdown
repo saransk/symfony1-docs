@@ -51,9 +51,10 @@ To fulfill the requirements of enterprises having their own coding guidelines an
   * Live configuration changes are possible and effective.
   * The logging features give administrators full details about an application's activities.
 
-### Who Made Symfony and Why?
+### Кто создал Symfony и зачем?
 
-The first version of symfony was released in October 2005 by project founder Fabien Potencier, coauthor of this book. Fabien is the CEO of Sensio ([http://www.sensio.com/](http://www.sensio.com/)), a French web agency well known for its innovative views on web development.
+Первая версия symfony была выпущена в октябре 2005 года основателем проекта Fabien Potencier, соавтором этой книги.  
+Фабьен является руководителем Sensio ([http://www.sensio.com/](http://www.sensio.com/)), французского веб-агентства, хорошо известного инновационными взглядами на веб-разработку.
 
 Back in 2003, Fabien spent some time inquiring about the existing open source development tools for web applications in PHP. He found that none fulfilled the previously described requirements. When PHP 5 was released, he decided that the available tools had reached a mature enough stage to be integrated into a full-featured framework. He subsequently spent a year developing the symfony core, basing his work on the Mojavi Model-View-Controller (MVC) framework, the Propel object-relational mapping (ORM), and the Ruby on Rails templating helpers.
 
