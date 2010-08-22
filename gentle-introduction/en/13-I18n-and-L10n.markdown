@@ -4,9 +4,10 @@
 Если Вы когда-либо разрабатывали международные приложения, Вы знаете, что
 If you ever developed an international application, you know that dealing with every aspect of text translation, local standards, and localized content can be a nightmare. Fortunately, symfony natively automates all the aspects of internationalization.
 
-As it is a long word, developers often refer to internationalization as i18n (count the letters in the word to know why). Localization is referred to as l10n. They cover two different aspects of multilingual web applications.
+Так как это длинное слово, разработчики часто называют интернационализацию как i18n (по количеству символов в слове, чтобы знать почему). Локализация называется как l10n. Они охватывают различные аспекты веб-приложений.
 
-An internationalized application contains several versions of the same content in various languages or formats. For instance, a webmail interface can offer the same service in several languages; only the interface changes.
+В интернационализированном приложении содержится несколько версий одного и того же контента в различных языках или форматах.  
+For instance, a webmail interface can offer the same service in several languages; only the interface changes.
 
 A localized application contains distinct information according to the country from which it is browsed. Think about the contents of a news portal: When browsed from the United States, it displays the latest headlines about the United States, but when browsed from France, the headlines concern the French news. So an l10n application not only provides content translation, but the content can be different from one localized version to another.
 
